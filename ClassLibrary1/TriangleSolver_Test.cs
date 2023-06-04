@@ -35,6 +35,50 @@ namespace UnitTest
             // Assert
             Assert.AreEqual(expectedType, actualType);
         }
-        
+        [Test]
+        public void test_AnalyzeTriangle_Isosceles_1()
+        {
+            // Arrange
+            int sideA = 5;
+            int sideB = 5;
+            int sideC = 9;
+            string expectedType = "The triangle is valid and is an ISOSCELES";
+
+            // Act
+            string actualType = Triangle.AnalyzeTriangle(sideA, sideB, sideC);
+
+            // Assert
+            Assert.AreEqual(expectedType, actualType);
+        }
+        [Test]
+        public void test_AnalyzeTriangle_Isosceles_2()
+        {
+            // Arrange
+            int sideA = 10;
+            int sideB = 6;
+            int sideC = 6;
+            string expectedType = "The triangle is valid and is an ISOSCELES";
+
+            // Act
+            string actualType = Triangle.AnalyzeTriangle(sideA, sideB, sideC);
+
+            // Assert
+            Assert.AreEqual(expectedType, actualType);
+        }
+        [Test]
+        public void test_AnalyzeTriangle_Isosceles_3()
+        {
+            // Arrange
+            int sideA = 8;
+            int sideB = 5;
+            int sideC = 8;
+            string expectedType = "The triangle is valid and is an ISOSCELES";
+
+            // Act
+            string actualType = Triangle.AnalyzeTriangle(sideA, sideB, sideC);
+
+            // Assert
+            Assert.AreEqual(expectedType, actualType);
+        }
     }
 }
