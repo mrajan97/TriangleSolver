@@ -204,5 +204,51 @@ namespace UnitTest
             Assert.AreEqual(expectedType, actualType);
         }
 
+        [Test]
+        public void test_AnalyzeTriangle_InvalidTriangle_1()
+        {
+            // Arrange
+            int sideA = 3;
+            int sideB = 1;
+            int sideC = 1;
+            string expectedType = "A triangle cannot be formed with those numbers";
+
+            // Act
+            string actualType = Triangle.AnalyzeTriangle(sideA, sideB, sideC);
+
+            // Assert
+            Assert.AreEqual(expectedType, actualType);
+        }
+        [Test]
+        public void test_AnalyzeTriangle_InvalidTriangle_2()
+        {
+            // Arrange
+            int sideA = 3;
+            int sideB = 7;
+            int sideC = 1;
+            string expectedType = "A triangle cannot be formed with those numbers";
+
+            // Act
+            string actualType = Triangle.AnalyzeTriangle(sideA, sideB, sideC);
+
+            // Assert
+            Assert.AreEqual(expectedType, actualType);
+        }
+        [Test]
+        public void test_AnalyzeTriangle_InvalidTriangle_3()
+        {
+            // Arrange
+            int sideA = 10;
+            int sideB = 2;
+            int sideC = 8;
+            string expectedType = "A triangle cannot be formed with those numbers";
+
+            // Act
+            string actualType = Triangle.AnalyzeTriangle(sideA, sideB, sideC);
+
+            // Assert
+            Assert.AreEqual(expectedType, actualType);
+        }
+
     }
 }
