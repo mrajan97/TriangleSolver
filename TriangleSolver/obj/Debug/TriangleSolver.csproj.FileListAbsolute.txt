@@ -4,3 +4,9 @@ C:\Users\Administrator\source\repos\TriangleSolver\TriangleSolver\obj\Debug\Tria
 C:\Users\Administrator\source\repos\TriangleSolver\TriangleSolver\obj\Debug\TriangleSolver.csproj.CoreCompileInputs.cache
 C:\Users\Administrator\source\repos\TriangleSolver\TriangleSolver\obj\Debug\TriangleSolver.dll
 C:\Users\Administrator\source\repos\TriangleSolver\TriangleSolver\obj\Debug\TriangleSolver.pdb
+C:\Users\megha\OneDrive\Desktop\Conestoga\Semester2\SoftwareQuality\Assignment2\TriangleSolver\TriangleSolver\bin\Debug\TriangleSolver.dll
+C:\Users\megha\OneDrive\Desktop\Conestoga\Semester2\SoftwareQuality\Assignment2\TriangleSolver\TriangleSolver\bin\Debug\TriangleSolver.pdb
+C:\Users\megha\OneDrive\Desktop\Conestoga\Semester2\SoftwareQuality\Assignment2\TriangleSolver\TriangleSolver\obj\Debug\TriangleSolver.csproj.AssemblyReference.cache
+C:\Users\megha\OneDrive\Desktop\Conestoga\Semester2\SoftwareQuality\Assignment2\TriangleSolver\TriangleSolver\obj\Debug\TriangleSolver.csproj.CoreCompileInputs.cache
+C:\Users\megha\OneDrive\Desktop\Conestoga\Semester2\SoftwareQuality\Assignment2\TriangleSolver\TriangleSolver\obj\Debug\TriangleSolver.dll
+C:\Users\megha\OneDrive\Desktop\Conestoga\Semester2\SoftwareQuality\Assignment2\TriangleSolver\TriangleSolver\obj\Debug\TriangleSolver.pdb
