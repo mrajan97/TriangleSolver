@@ -80,5 +80,81 @@ namespace UnitTest
             // Assert
             Assert.AreEqual(expectedType, actualType);
         }
+        [Test]
+        public void test_AnalyzeTriangle_Scalene_1()
+        {
+            // Arrange
+            int sideA = 8;
+            int sideB = 5;
+            int sideC = 6;
+            string expectedType = "The triangle is valid and is a SCALENE";
+
+            // Act
+            string actualType = Triangle.AnalyzeTriangle(sideA, sideB, sideC);
+
+            // Assert
+            Assert.AreEqual(expectedType, actualType);
+        }
+        [Test]
+        public void test_AnalyzeTriangle_Scalene_2()
+        {
+            // Arrange
+            int sideA = 8;
+            int sideB = 10;
+            int sideC = 6;
+            string expectedType = "The triangle is valid and is a SCALENE";
+
+            // Act
+            string actualType = Triangle.AnalyzeTriangle(sideA, sideB, sideC);
+
+            // Assert
+            Assert.AreEqual(expectedType, actualType);
+        }
+        [Test]
+        public void test_AnalyzeTriangle_Scalene_3()
+        {
+            // Arrange
+            int sideA = 15;
+            int sideB = 10;
+            int sideC = 12;
+            string expectedType = "The triangle is valid and is a SCALENE";
+
+            // Act
+            string actualType = Triangle.AnalyzeTriangle(sideA, sideB, sideC);
+
+            // Assert
+            Assert.AreEqual(expectedType, actualType);
+        }
+        [Test]
+        public void test_AnalyzeTriangle_Scalene_4()
+        {
+            // Arrange
+            int sideA = 17;
+            int sideB = 16;
+            int sideC = 15;
+            string expectedType = "The triangle is valid and is a SCALENE";
+
+            // Act
+            string actualType = Triangle.AnalyzeTriangle(sideA, sideB, sideC);
+
+            // Assert
+            Assert.AreEqual(expectedType, actualType);
+        }
+        [Test]
+        public void test_AnalyzeTriangle_Scalene_5()
+        {
+            // Arrange
+            int sideA = 10;
+            int sideB = 8;
+            int sideC = 6;
+            string expectedType = "The triangle is valid and is a SCALENE";
+
+            // Act
+            string actualType = Triangle.AnalyzeTriangle(sideA, sideB, sideC);
+
+            // Assert
+            Assert.AreEqual(expectedType, actualType);
+        }
+
     }
 }
