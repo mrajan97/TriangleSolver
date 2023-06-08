@@ -21,7 +21,7 @@ namespace UnitTest
         }
 
         [Test]
-        public void test_AnalyzeTriangle_Equilateral()
+        public void AnalyzeTriangle_Input5and5and5_OutputEquilateral()
         {
             // Arrange
             int sideA = 5;
@@ -36,7 +36,7 @@ namespace UnitTest
             Assert.AreEqual(expectedType, actualType);
         }
         [Test]
-        public void test_AnalyzeTriangle_Isosceles_1()
+        public void AnalyzeTriangle_Input5and5and9_OutputIsosceles()
         {
             // Arrange
             int sideA = 5;
@@ -51,7 +51,7 @@ namespace UnitTest
             Assert.AreEqual(expectedType, actualType);
         }
         [Test]
-        public void test_AnalyzeTriangle_Isosceles_2()
+        public void AnalyzeTriangle_Input10and6and6_OutputIsosceles()
         {
             // Arrange
             int sideA = 10;
@@ -66,7 +66,7 @@ namespace UnitTest
             Assert.AreEqual(expectedType, actualType);
         }
         [Test]
-        public void test_AnalyzeTriangle_Isosceles_3()
+        public void AnalyzeTriangle_Input8and5and8_OutputIsosceles()
         {
             // Arrange
             int sideA = 8;
@@ -81,7 +81,7 @@ namespace UnitTest
             Assert.AreEqual(expectedType, actualType);
         }
         [Test]
-        public void test_AnalyzeTriangle_Scalene_1()
+        public void AnalyzeTriangle_Input8and5and6_OutputScalene()
         {
             // Arrange
             int sideA = 8;
@@ -96,7 +96,7 @@ namespace UnitTest
             Assert.AreEqual(expectedType, actualType);
         }
         [Test]
-        public void test_AnalyzeTriangle_Scalene_2()
+        public void AnalyzeTriangle_Input8and10and6_OutputScalene()
         {
             // Arrange
             int sideA = 8;
@@ -111,7 +111,7 @@ namespace UnitTest
             Assert.AreEqual(expectedType, actualType);
         }
         [Test]
-        public void test_AnalyzeTriangle_Scalene_3()
+        public void AnalyzeTriangle_Input15and10and10_OutputScalene()
         {
             // Arrange
             int sideA = 15;
@@ -126,7 +126,7 @@ namespace UnitTest
             Assert.AreEqual(expectedType, actualType);
         }
         [Test]
-        public void test_AnalyzeTriangle_Scalene_4()
+        public void AnalyzeTriangle_Input17and16and15_OutputScalene()
         {
             // Arrange
             int sideA = 17;
@@ -141,7 +141,7 @@ namespace UnitTest
             Assert.AreEqual(expectedType, actualType);
         }
         [Test]
-        public void test_AnalyzeTriangle_Scalene_5()
+        public void AnalyzeTriangle_Input10and8and6_OutputScalene()
         {
             // Arrange
             int sideA = 10;
@@ -157,7 +157,7 @@ namespace UnitTest
         }
 
         [Test]
-        public void test_AnalyzeTriangle_ZeroLengthforOneSide_1()
+        public void AnalyzeTriangle_Input0and8and6_OutputInvalidTrianglewithOneOrMoreSidesZero()
         {
             // Arrange
             int sideA = 0;
@@ -173,27 +173,11 @@ namespace UnitTest
         }
 
         [Test]
-        public void test_AnalyzeTriangle_ZeroLengthforOneSide_2()
+        public void AnalyzeTriangle_Input5and0and0_OutputInvalidTrianglewithOneOrMoreSidesZero()
         {
             // Arrange
             int sideA = 5;
             int sideB = 0;
-            int sideC = 6;
-            string expectedType = "At least one side of your triangle has a zero length and is thus invalid";
-
-            // Act
-            string actualType = Triangle.AnalyzeTriangle(sideA, sideB, sideC);
-
-            // Assert
-            Assert.AreEqual(expectedType, actualType);
-        }
-
-        [Test]
-        public void test_AnalyzeTriangle_ZeroLengthforOneSide_3()
-        {
-            // Arrange
-            int sideA = 5;
-            int sideB = 8;
             int sideC = 0;
             string expectedType = "At least one side of your triangle has a zero length and is thus invalid";
 
@@ -205,7 +189,23 @@ namespace UnitTest
         }
 
         [Test]
-        public void test_AnalyzeTriangle_InvalidTriangle_1()
+        public void AnalyzeTriangle_Input0and0and0_OutputInvalidTrianglewithOneOrMoreSidesZero()
+        {
+            // Arrange
+            int sideA = 0;
+            int sideB = 0;
+            int sideC = 0;
+            string expectedType = "At least one side of your triangle has a zero length and is thus invalid";
+
+            // Act
+            string actualType = Triangle.AnalyzeTriangle(sideA, sideB, sideC);
+
+            // Assert
+            Assert.AreEqual(expectedType, actualType);
+        }
+
+        [Test]
+        public void AnalyzeTriangle_Input3and1and1_OutputInvalidTriangle()
         {
             // Arrange
             int sideA = 3;
@@ -220,7 +220,7 @@ namespace UnitTest
             Assert.AreEqual(expectedType, actualType);
         }
         [Test]
-        public void test_AnalyzeTriangle_InvalidTriangle_2()
+        public void AnalyzeTriangle_Input3and7and1_OutputInvalidTriangle()
         {
             // Arrange
             int sideA = 3;
@@ -235,7 +235,7 @@ namespace UnitTest
             Assert.AreEqual(expectedType, actualType);
         }
         [Test]
-        public void test_AnalyzeTriangle_InvalidTriangle_3()
+        public void AnalyzeTriangle_Input10and2and8_OutputInvalidTriangle()
         {
             // Arrange
             int sideA = 10;
